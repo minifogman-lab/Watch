@@ -28,7 +28,7 @@
             width="200" height="50">
             <TimeText x="0" y="0"
                 width="200" height="50"
-                format="HH:mm">
+                format="hh:mm">
                 <Font family="SYNC_TO_DEVICE"
                     size="34" color="#D8DADD"/>
             </TimeText>
