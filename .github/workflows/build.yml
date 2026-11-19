@@ -1,4 +1,3 @@
-
 name: Build watch face APK
 
 on:
@@ -20,7 +19,7 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-       - name: Set up Android SDK
+      - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
           packages: |
@@ -29,8 +28,6 @@ jobs:
 
       - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses
-
-      
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -46,4 +43,3 @@ jobs:
           name: Lange-Ultra-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
-
