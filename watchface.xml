@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+    <Scene>
+        <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial" />
+        </PartImage>
+        <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour" x="214" y="76" width="22" height="170"
+                pivotX="0.5" pivotY="0.976" />
+            <MinuteHand resource="minute" x="217" y="43" width="16" height="205"
+                pivotX="0.5" pivotY="0.985" />
+            <SecondHand resource="second" x="222" y="22" width="6" height="225"
+                pivotX="0.5" pivotY="0.991">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+        </AnalogClock>
+        <PartDraw x="214" y="214" width="22" height="22">
+            <Ellipse x="0" y="0" width="22" height="22" fillColor="#D8DADD" />
+            <Ellipse x="7" y="7" width="8" height="8" fillColor="#17191C" />
+        </PartDraw>
+    </Scene>
+</WatchFace>
