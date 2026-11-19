@@ -3,105 +3,106 @@
     <Scene>
 
         <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial" />
+            <Image resource="dial"/>
         </PartImage>
 
         <AnalogClock x="0" y="0" width="450" height="450">
             <HourHand resource="hour"
                 x="214" y="76" width="22" height="170"
-                pivotX="0.5" pivotY="0.976" />
+                pivotX="0.5" pivotY="0.976"/>
 
             <MinuteHand resource="minute"
                 x="217" y="43" width="16" height="205"
-                pivotX="0.5" pivotY="0.985" />
+                pivotX="0.5" pivotY="0.985"/>
 
             <SecondHand resource="second"
                 x="222" y="22" width="6" height="225"
                 pivotX="0.5" pivotY="0.991">
                 <Variant mode="AMBIENT"
-                    target="alpha" value="0" />
+                    target="alpha" value="0"/>
             </SecondHand>
         </AnalogClock>
 
         <!-- Digital time -->
-        <DigitalClock x="135" y="315"
-            width="180" height="50">
+        <DigitalClock x="125" y="315"
+            width="200" height="50">
             <TimeText x="0" y="0"
-                width="180" height="50"
+                width="200" height="50"
                 format="HH:mm">
                 <Font family="SYNC_TO_DEVICE"
-                    size="34" color="#D8DADD" />
+                    size="34" color="#D8DADD"/>
             </TimeText>
         </DigitalClock>
 
         <!-- Date -->
-        <PartText x="145" y="285"
-            width="180" height="30">
-            <Text>
+        <PartText x="125" y="275"
+            width="200" height="35">
+            <Text align="CENTER">
                 <Font family="SYNC_TO_DEVICE"
-                    size="20" color="#D8DADD">
+                    size="22" color="#D8DADD">
                     <Template>
                         <![CDATA[%02d %s]]>
-                        <Parameter expression="[DAY]" />
-                        <Parameter expression="[MONTH_S]" />
+                        <Parameter expression="[DAY]"/>
+                        <Parameter expression="[MONTH_S]"/>
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
         <!-- Steps -->
-        <PartText x="35" y="375"
-            width="125" height="35">
-            <Text>
+        <PartText x="15" y="380"
+            width="135" height="35">
+            <Text align="CENTER">
                 <Font family="SYNC_TO_DEVICE"
                     size="17" color="#D8DADD">
                     <Template>
                         <![CDATA[STEPS %d]]>
-                        <Parameter expression="[STEP_COUNT]" />
+                        <Parameter expression="[STEP_COUNT]"/>
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
         <!-- Battery -->
-        <PartText x="175" y="375"
-            width="100" height="35">
-            <Text>
+        <PartText x="155" y="380"
+            width="140" height="35">
+            <Text align="CENTER">
                 <Font family="SYNC_TO_DEVICE"
                     size="17" color="#D8DADD">
                     <Template>
                         <![CDATA[BAT %d%%]]>
-                        <Parameter expression="[BATTERY_PERCENT]" />
+                        <Parameter expression="[BATTERY_PERCENT]"/>
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
         <!-- Moon phase -->
-        <PartText x="290" y="375"
+        <PartText x="295" y="380"
             width="145" height="35">
-            <Text>
+            <Text align="CENTER">
                 <Font family="SYNC_TO_DEVICE"
-                    size="14" color="#D8DADD">
+                    size="13" color="#D8DADD">
                     <Template>
                         <![CDATA[%s]]>
-                        <Parameter expression="[MOON_PHASE_TYPE_STRING]" />
+                        <Parameter expression="[MOON_PHASE_TYPE_STRING]"/>
                     </Template>
                 </Font>
             </Text>
         </PartText>
 
-        <!-- Center pin -->
+        <!-- Center -->
         <PartDraw x="214" y="214"
             width="22" height="22">
             <Ellipse x="0" y="0"
                 width="22" height="22"
-                fillColor="#D8DADD" />
+                fillColor="#D8DADD"/>
             <Ellipse x="7" y="7"
                 width="8" height="8"
-                fillColor="#17191C" />
+                fillColor="#17191C"/>
         </PartDraw>
 
     </Scene>
 </WatchFace>
+
 
