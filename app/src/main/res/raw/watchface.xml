@@ -90,6 +90,12 @@
                 </Font>
             </Text>
         </PartText>
+                <PartText x="100" y="100" width="250" height="50">
+            <Text align="CENTER">
+                <Font family="SYNC_TO_DEVICE"
+                    size="30" color="#FFFFFF">TEST 123</Font>
+            </Text>
+        </PartText>
 
         <!-- Center -->
         <PartDraw x="214" y="214"
