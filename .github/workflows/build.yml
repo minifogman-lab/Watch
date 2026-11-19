@@ -19,6 +19,9 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+       - name: Accept Android SDK licenses
+        run: yes | /usr/local/lib/android/sdk/cmdline-tools/16.0/bin/sdkmanager --licenses
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
