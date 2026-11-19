@@ -1,14 +1,4 @@
-plugins { id 'com.android.application' }
-
-android {
-    namespace 'com.example.langeultraclassic'
-    compileSdk 36
-
-    defaultConfig {
-        applicationId 'com.example.langeultraclassic'
-        minSdk 34
-        targetSdk 36
-        versionCode 1
-        versionName '1.0'
-    }
+plugins {
+    id 'com.android.application' version '8.9.1' apply false
 }
+
